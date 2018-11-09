@@ -1,9 +1,8 @@
 public class Team {
 	
 	private String nationality;
-	private String name;
-	private int age;
-	private String position;
+	private String stadium;
+	private int capacity;
 	
 	public String getNationality() {
 		return this.nationality;
@@ -12,24 +11,17 @@ public class Team {
 		this.nationality = nationality;
 	}
 	
-	public String getName() {
-		return this.name;
+	public String getStadium() {
+		return this.stadium;
 	}
-	public void setName(String name) {
-		this.name= name;
-	}
-	
-	public int getAge() {
-		return this.age;
-	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setStadium(String stadium) {
+		this.stadium = stadium;
 	}
 	
-	public String getPosition() {
-		return this.position;
+	public int getCapacity() {
+		return this.capacity;
 	}
-	public void setPosition(String position) {
-		this.position=position;
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
 	}
 }
