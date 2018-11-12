@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class FootballMatch {
 
 	private String localTeam;
@@ -10,8 +9,8 @@ public class FootballMatch {
 		return this.localTeam;
     }
 
-	public void setLocalTeam(String LocalTeam) {
-		this.localTeam = LocalTeam;
+	public void setLocalTeam(String localTeam) {
+		this.localTeam = localTeam;
 	}
 
 	public String getVisitorTeam() {
