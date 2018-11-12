@@ -1,0 +1,10 @@
+Mónaco::Brujas::0::4
+Atlético::B. Dortmund::2::0
+Tottenham::PSV::2::1
+Inter::Barcelona::1::1
+E. Roja::Liverpool::2::0
+Nápoles::PSG::1::1
+Schalke 04::Galatasaray::2::0
+Oporto::Lokomotiv::4::1
+Bayern::AEK Atenas::2::0
+Benfica::Ajax::1::1

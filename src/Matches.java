@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Matches {
 	public static void main(String[] args){
-		File matches = new File("matches.txt");
+		File matches = new File(args[0]);
 		ArrayList<FootballMatch> list = new ArrayList<FootballMatch>();
 		try {
 			Scanner sc = new Scanner (matches);
