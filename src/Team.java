@@ -1,8 +1,16 @@
 public class Team {
 	
+	private String name;
 	private String nationality;
 	private String stadium;
 	private int capacity;
+	
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String nationality) {
+		this.nationality=nationality;
+	}
 	
 	public String getNationality() {
 		return this.nationality;
