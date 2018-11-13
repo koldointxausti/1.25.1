@@ -32,12 +32,12 @@ public class MatchArrayList {
 			}all.add(list);
 		}
 		for(int i=0; i<all.size();i++) {
-			System.out.println("There are "+all.get(i).size()+" matches in the number "+(i+1))
+			System.out.println("There are "+all.get(i).size()+" matches in the number "+(i+1));
 				for (int x = 0; all.get(i).size() >x;x++){
-					System.out.println(((FootballMatch) all.get(i).get(x)).getLocalTeam()+" - ");
-					System.out.print(((FootballMatch) all.get(i).get(x)).getLocalTeam());
-					System.out.println(((FootballMatch) all.get(i).get(x)).getGoalsLocal()+" - ");
-					System.out.print(((FootballMatch) all.get(i).get(x)).getGoalsVisitor());
+					System.out.print(((FootballMatch) all.get(i).get(x)).getLocalTeam()+" - ");
+					System.out.println(((FootballMatch) all.get(i).get(x)).getLocalTeam());
+					System.out.print(((FootballMatch) all.get(i).get(x)).getGoalsLocal()+" - ");
+					System.out.println(((FootballMatch) all.get(i).get(x)).getGoalsVisitor());
 				}
 			System.out.println();
 		}
