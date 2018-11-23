@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class MatchArrayList {
 	public static void main(String[] args){
 		if(args.length<1) {
-			System.out.println("Enter the path of the file you want to read.");
+			System.out.println("Enter the name of the file you want to read.");
 			System.out.println("example: java Matches ../matches.txt");
 		}
 		ArrayList<FootballMatch> list = new ArrayList<FootballMatch>();
@@ -27,8 +27,8 @@ public class MatchArrayList {
 					list.add(a); 
 				}
 			}catch (FileNotFoundException e) {
-				System.out.println("Enter the path of the file you want to read.");
-				System.out.println("example: java MatchArrayList ../Champions.txt");
+				System.out.println("Enter the name of the file you want to read.");
+				System.out.println("example: java MatchArrayList ../Champions.txt ../CopaDelRey.txt");
 			}all.add(list);
 		}
 		for(int i=0; i<all.size();i++) {
