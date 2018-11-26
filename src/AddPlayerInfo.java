@@ -55,7 +55,6 @@ public class AddPlayerInfo {
 						for (int x = 0; x < teams.size(); x++) {
 							if (tokens[0] == teams.get(x).getName()) {
 								a.setLocalTeam(teams.get(x));
-								System.out.println("a");
 								break;
 							}
 						}
