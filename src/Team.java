@@ -4,7 +4,6 @@ public class Team {
 	private String nationality;
 	private String stadium;
 	private int capacity;
-	private Player player;
 	
 	public String getName() {
 		return this.name;
@@ -32,12 +31,5 @@ public class Team {
 	}
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
-	}
-	
-	public Player getPlayer() {
-		return this.player;
-	}
-	public void setPlayer() {
-		this.player = player;
 	}
 }
