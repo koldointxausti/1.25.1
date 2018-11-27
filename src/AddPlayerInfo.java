@@ -34,7 +34,7 @@ public class AddPlayerInfo {
 					a.setAge(Integer.parseInt(tokens[1]));
 					a.setPosition(tokens[2]);
 					for (int i = 0; i < teams.size(); i++) {
-						if (tokens[3] == teams.get(i).getName()) {
+						if (tokens[3].compareTo(teams.get(i).getName()) == 0) {
 							a.setTeam(teams.get(i));
 							break;
 						}
@@ -53,13 +53,13 @@ public class AddPlayerInfo {
 						FootballMatch a = new FootballMatch();
 						String tokens[] = sc.nextLine().split("::");
 						for (int x = 0; x < teams.size(); x++) {
-							if (tokens[0] == teams.get(x).getName()) {
+							if (tokens[0].compareTo(teams.get(x).getName()) == 0) {
 								a.setLocalTeam(teams.get(x));
 								break;
 							}
 						}
 						for (int x = 0; x < teams.size(); x++) {
-							if (tokens[1] == teams.get(x).getName()) {
+							if (tokens[1].compareTo(teams.get(x).getName()) == 0) {
 								a.setVisitorTeam(teams.get(x));
 								break;
 							}
@@ -87,7 +87,7 @@ public class AddPlayerInfo {
 					System.out.println();
 
 					for (int i = 0; i < players.size(); i++) {
-						if (players.get(i).getTeam().getName() == list.get(x).getLocalTeam().getName()) {
+						if (players.get(i).getTeam().getName().compareTo(list.get(x).getLocalTeam().getName())== 0) {
 							System.out.println("*LOCAL TEAM'S PLAYERS' INFORMATION*");
 							System.out.println("Name: " + players.get(i).getName());
 							System.out.println("Age: " + players.get(i).getAge());
@@ -103,7 +103,7 @@ public class AddPlayerInfo {
 					System.out.println();
 
 					for (int i = 0; i < players.size(); i++) {
-						if (players.get(i).getTeam().getName() == list.get(x).getVisitorTeam().getName()) {
+						if (players.get(i).getTeam().getName().compareTo(list.get(x).getVisitorTeam().getName()) == 0) {
 							System.out.println("*VISITOR TEAM'S PLAYERS' INFORMATION*");
 							System.out.println("Name: " + players.get(i).getName());
 							System.out.println("Age: " + players.get(i).getAge());
